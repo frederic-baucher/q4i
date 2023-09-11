@@ -1,0 +1,25 @@
+---
+title: "Q4i Example"
+format:
+  # native: default
+  html: default
+  pdf: default
+from: markdown+implicit_figures
+# filters:
+#  - _extensions/q4i/q4i.lua
+#  - quarto
+keep-tex: true
+output: 
+  html_document:
+      fig_caption: true
+graphics: yes
+---
+
+## Heading
+
+### Direct
+{{< q4i 'https://imgur.com/c1iuv5g.png' 'issu de Imgur' >}}
+
+## Other paragraph
+
+AAA
