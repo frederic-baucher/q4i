@@ -18,7 +18,14 @@ graphics: yes
 ## Heading
 
 ### Direct
+Ce paragraphe ne doit pas être vide, sinon les images sont affichées n'importe où.
+
+.
 ![issu de Imgur](https://imgur.com/c1iuv5g.png)
+
+après l'image
+
+après le paragraphe
 
 ## Other paragraph
 
