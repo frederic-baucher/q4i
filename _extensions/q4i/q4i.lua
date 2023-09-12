@@ -39,14 +39,40 @@ return {
 	-- pandoc without.qmd -t native ==> image embedded in a Figure
 	-- quarto render --to native without.qmd ==> image embedded in a Para
 
-		
-	local caption = "Imgur" -- arg2
+	local raw_path = ''
+	if ( #args > 0 ) then
+		raw_path = args[1]
+	else
+		error("q4i: No path to the image")
+	end
 	
-	local short_path = "c1iuv5g.png"
-	local name_only = "c1iuv5g"
+	i, j = string.find ( raw_path, 'https://' )
 	
+	local full_path = ''
+	if ( i == 1 ) then
+		full_path = raw_path 
+	else
+		-- we suppose this is a filename
+		i, j = string.find ( raw_path, '.png' )
+		if ( i ) then
+			-- we suppose this is a filename with extension
+			full_path = "assets/img/imgur/" .. raw_path
+		else
+			full_path = "assets/img/imgur/" .. raw_path .. ".png"
+		end
+	end
+	
+	local caption = ''
+	if ( #args > 1 ) then
+		caption = args[2]
+	else
+		caption = "Image"
+	end
+	
+	-- local short_path = "c1iuv5g.png"
+	-- local name_only = "c1iuv5g"
+	-- local full_path = "https://imgur.com/" .. name_only .. ".png"			
 
-	local full_path = "https://imgur.com/" .. name_only .. ".png"
 	local result = full_path
 
 	local attr = ""	
@@ -72,7 +98,8 @@ return {
 	-- Creates a Image inline element
 	local img_attr = {}	
 	local the_title = "the title"
-    objimg = pandoc.Image( caption, 'https://imgur.com/c1iuv5g.png' , the_title, img_attr )	
+	
+    objimg = pandoc.Image( caption, full_path , the_title, img_attr )	
 	
 	
 	-- https://pandoc.org/lua-filters.html#pandoc.figure
