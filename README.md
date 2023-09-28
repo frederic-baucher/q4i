@@ -7,4 +7,9 @@ How to integrate in an existing project ?
 ```
 
 ## Usage
+
+### Imgur (remote image)
+```{{< q4i 'https://imgur.com/LKAJgs7.png' 'Alexander' >}}```
+
+### Unsplash (stored locally)
 ```{{< q4i 'https://imgur.com/LKAJgs7.png' 'Alexander' >}}```
