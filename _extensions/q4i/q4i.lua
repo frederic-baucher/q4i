@@ -191,8 +191,9 @@ return {
 			end
 			local l = #t -- table.getn(t) deprecated
 			quarto.log.output ( "q4i: number of part in filename = " .. l )
-			full_path = "assets/img/unsplash/" .. filename
-			-- author = 'test'
+			-- full_path = "assets/img/unsplash/" .. filename -- KO in external projects but OK when run with example files ?!
+			full_path = "/assets/img/unsplash/" .. filename 
+			
 			if (l == 4) then
 				t1 = t[1]
 				t2 = t[2]
