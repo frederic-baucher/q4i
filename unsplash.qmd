@@ -1,0 +1,42 @@
+---
+title: Manage unsplash images
+# author: "F. B."
+---
+# Misc. {.unnumbered}
+
+## Example: specs (png)
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Suppose we are developping a system for a company that rents cars:
+
+- manage fleet
+- add new vehicles
+- ...
+:::
+
+::: {.column width="40%"}
+{{< q4i 'topsphere-media-utMdPdGDc8M-unsplash.png' 'A car fleet' >}}
+:::
+
+::::
+
+
+## Example: specs (jpg)
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Suppose we are developping a system for a company that rents cars:
+
+- manage fleet
+- add new vehicles
+- ...
+:::
+
+::: {.column width="40%"}
+{{< q4i 'topsphere-media-utMdPdGDc8M-unsplash.jpg' 'A car fleet' >}}
+:::
+
+::::

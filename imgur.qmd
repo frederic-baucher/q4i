@@ -1,0 +1,24 @@
+---
+title: "Q4i Example"
+format:
+  # native: default
+  html: default
+  pdf: default
+from: markdown+implicit_figures
+# filters:
+#  - _extensions/q4i/q4i.lua
+#  - quarto
+keep-tex: true
+output: 
+  html_document:
+      fig_caption: true
+graphics: yes
+---
+
+## Heading
+
+### Direct
+Ce paragraphe ne doit pas être vide, sinon les images sont affichées n'importe où.
+
+{{< q4i 'https://i.imgur.com/YUKfMc4.png' source='https://www.peppercarrot.com/' attribution='Copyright © David Revoy 2023' licence-type='Creative Commons Attribution 4.0 International license' licence-url='https://www.peppercarrot.com/en/license' >}}
+

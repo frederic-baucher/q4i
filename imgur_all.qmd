@@ -1,0 +1,40 @@
+---
+title: "Q4i Example"
+format:
+  # native: default
+  html: default
+  pdf: default
+from: markdown+implicit_figures
+# filters:
+#  - _extensions/q4i/q4i.lua
+#  - quarto
+keep-tex: true
+output: 
+  html_document:
+      fig_caption: true
+graphics: yes
+---
+
+## Heading
+
+### Direct
+Ce paragraphe ne doit pas être vide, sinon les images sont affichées n'importe où.
+
+{{< q4i 'https://i.imgur.com/YUKfMc4.png' source='https://www.peppercarrot.com/' attribution='Copyright © David Revoy 2023' licence-type='Creative Commons Attribution 4.0 International license' licence-url='https://www.peppercarrot.com/en/license' >}}
+
+### Direct 2
+Ce paragraphe ne doit pas être vide, sinon les images sont affichées n'importe où.
+
+{{< q4i 'n3Bt2mf.png' source='https://spotify.com'  >}}
+
+
+## Local de l'étape avec extension
+
+{{< q4i '640px-Saslonch_y_Sela_da_Mont_Sëuc.png' source='' 'By Wolfgang Moroder- Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=132387237' >}}
+
+
+## Local de l'étape sans extension
+
+{{< q4i '3840px-Breil-Brigels,_Lag_da_Breil-_Flem._23-09-2022._(d.j.b)_04' 'By Dominicus Johannes Bergsma - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=124260593' >}}
+
+## Conclusion
