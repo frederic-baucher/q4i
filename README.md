@@ -30,4 +30,5 @@ Learn more about this extension at https://www.github.com/frederic-baucher/q4i
 
 ### Unsplash (stored locally)
 The file is supposed to be stored in ```./assets/img/unsplash```
+
 ```{{< q4i 'topsphere-media-utMdPdGDc8M-unsplash.png' 'A car fleet' >}}```
