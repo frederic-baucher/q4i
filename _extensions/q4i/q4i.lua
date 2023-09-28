@@ -107,9 +107,7 @@ return {
 	if ( i ) then file_extension = '.jpg' end
 	i, j = string.find ( raw_path, '.jpeg' )		
 	if ( i ) then file_extension = '.jpeg' end	
-	
-	
-	
+
 	if ( path_type == 'filename' ) or ( path_type == 'full' ) then
 		if ( #file_extension > 0 ) then
 			quarto.log.output ( "q4i: filename with extension = " .. filename  )				
